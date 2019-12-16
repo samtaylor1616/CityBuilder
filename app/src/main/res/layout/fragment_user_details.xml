@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".UserDetailsFragment"
+    android:id="@+id/fragment_user">
+
+    <android.support.constraint.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <ImageView
+            android:id="@+id/sunIcon"
+            android:layout_width="45dp"
+            android:layout_height="45dp"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintBottom_toBottomOf="parent"
+            android:layout_margin="8dp"/>
+
+        <ImageView
+        android:id="@+id/timeImage"
+        android:layout_width="20dp"
+        android:layout_height="20dp"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toLeftOf="@id/gameTime"
+        app:layout_constraintTop_toTopOf="parent"
+        android:layout_margin="8dp"/>
+
+        <TextView
+        android:id="@+id/gameTime"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:text="Time:"
+        app:layout_constraintLeft_toRightOf="@id/timeImage"
+        app:layout_constraintTop_toTopOf="parent"
+        android:layout_margin="8dp"/>
+
+        <TextView
+        android:id="@+id/gameMoney"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:text="Money:"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/gameTime"
+        android:layout_margin="8dp"/>
+
+        <TextView
+            android:id="@+id/newMoney"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            app:layout_constraintLeft_toRightOf="@id/gameMoney"
+            app:layout_constraintTop_toBottomOf="@id/gameTime"
+            android:layout_margin="8dp"/>
+
+        <TextView
+            android:id="@+id/currPop"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            android:layout_margin="8dp"/>
+
+        <TextView
+            android:id="@+id/employRate"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/currPop"
+            android:layout_margin="8dp"/>
+</android.support.constraint.ConstraintLayout>
+
+</FrameLayout>

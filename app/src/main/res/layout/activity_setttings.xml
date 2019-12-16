@@ -1,0 +1,205 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".SetttingsActivity"
+    android:padding="16dp">
+
+<!--Width Label-->
+    <TextView
+        android:id="@+id/widthLabel"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Map Width: "
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toLeftOf="@id/mapWidth"
+        app:layout_constraintTop_toTopOf="parent"/>
+    <EditText
+        android:id="@+id/mapWidth"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        app:layout_constraintLeft_toRightOf="@id/widthLabel"
+        app:layout_constraintRight_toLeftOf="@id/heightLabel"
+        app:layout_constraintTop_toTopOf="parent" />
+<!--Height Label-->
+    <TextView
+        android:id="@+id/heightLabel"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Map Height: "
+        app:layout_constraintLeft_toRightOf="@id/mapWidth"
+        app:layout_constraintRight_toLeftOf="@id/mapHeight"
+        app:layout_constraintTop_toTopOf="parent"/>
+    <EditText
+        android:id="@+id/mapHeight"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        app:layout_constraintLeft_toRightOf="@id/heightLabel"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent"/>
+<!--Money Label-->
+    <TextView
+        android:id="@+id/moneyLabel"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Money: "
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toLeftOf="@id/initialMoney"
+        app:layout_constraintTop_toBottomOf="@id/mapWidth"/>
+    <EditText
+        android:id="@+id/initialMoney"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        app:layout_constraintLeft_toRightOf="@id/moneyLabel"
+        app:layout_constraintRight_toLeftOf="@id/FamLabel"
+        app:layout_constraintTop_toBottomOf="@id/mapWidth" />
+<!--Fam Size Label-->
+    <TextView
+        android:id="@+id/FamLabel"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Family Size: "
+        app:layout_constraintLeft_toRightOf="@id/initialMoney"
+        app:layout_constraintRight_toLeftOf="@id/familySize"
+        app:layout_constraintTop_toBottomOf="@id/mapHeight"/>
+    <EditText
+        android:id="@+id/familySize"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        app:layout_constraintLeft_toRightOf="@id/FamLabel"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/mapHeight" />
+<!-- Shop Size Label -->
+    <TextView
+        android:id="@+id/ShopLabel"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Shop Size: "
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toLeftOf="@id/shopSize"
+        app:layout_constraintTop_toBottomOf="@id/familySize"/>
+    <EditText
+        android:id="@+id/shopSize"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        app:layout_constraintLeft_toRightOf="@id/ShopLabel"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/familySize" />
+<!-- Salary Label -->
+    <TextView
+        android:id="@+id/SalaryLabel"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Salary Size: "
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toLeftOf="@id/salary"
+        app:layout_constraintTop_toBottomOf="@id/shopSize"/>
+    <EditText
+        android:id="@+id/salary"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        app:layout_constraintLeft_toRightOf="@id/SalaryLabel"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/shopSize" />
+<!-- Taxrate Label -->
+    <TextView
+        android:id="@+id/TaxLabel"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Tax Rate: "
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toLeftOf="@id/taxRate"
+        app:layout_constraintTop_toBottomOf="@id/salary"/>
+    <EditText
+        android:id="@+id/taxRate"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        app:layout_constraintLeft_toRightOf="@id/TaxLabel"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/salary" />
+<!-- Service cost Label -->
+    <TextView
+        android:id="@+id/ServiceLabel"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Service Cost: "
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toLeftOf="@id/serviceCost"
+        app:layout_constraintTop_toBottomOf="@id/taxRate"/>
+    <EditText
+        android:id="@+id/serviceCost"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        app:layout_constraintLeft_toRightOf="@id/ServiceLabel"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/taxRate" />
+<!-- House cost Label -->
+    <TextView
+        android:id="@+id/HouseLabel"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="House Cost: "
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toLeftOf="@id/houseCost"
+        app:layout_constraintTop_toBottomOf="@id/serviceCost"/>
+    <EditText
+        android:id="@+id/houseCost"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        app:layout_constraintLeft_toRightOf="@id/HouseLabel"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/serviceCost" />
+<!-- Comm cost Label -->
+    <TextView
+        android:id="@+id/CommLabel"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Commercial Cost: "
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toLeftOf="@id/commCost"
+        app:layout_constraintTop_toBottomOf="@id/houseCost"/>
+    <EditText
+        android:id="@+id/commCost"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        app:layout_constraintLeft_toRightOf="@id/CommLabel"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/houseCost" />
+<!-- Road cost Label -->
+    <TextView
+        android:id="@+id/RoadLabel"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Road Cost: "
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toLeftOf="@id/roadCost"
+        app:layout_constraintTop_toBottomOf="@id/commCost"/>
+    <EditText
+        android:id="@+id/roadCost"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        app:layout_constraintLeft_toRightOf="@id/RoadLabel"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/commCost" />
+    <Button
+        android:id="@+id/saveSettingsBtn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Save"
+        app:layout_constraintTop_toBottomOf="@id/roadCost"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toLeftOf="@id/resetSettingBtn"
+        app:layout_constraintBottom_toBottomOf="parent"/>
+    <Button
+        android:id="@+id/resetSettingBtn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Reset"
+        app:layout_constraintTop_toBottomOf="@id/roadCost"
+        app:layout_constraintLeft_toRightOf="@id/saveSettingsBtn"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent"/>
+
+</android.support.constraint.ConstraintLayout>
